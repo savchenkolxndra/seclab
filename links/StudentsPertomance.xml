@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="StudentsPertomanceToHTML.xsl"?>
+<Students>
+	<Student FullName="Кулик Оксана Маркіянівна" Faculty="Міжнародних відносин" Department="Міжнародні відносини" Specialization="Міжнародні економічні відносини" Group="БТ-201">
+		<Discipline Name="Міжнародна статистика" Grade="92" />
+		<Discipline Name="Економіка" Grade="89" />
+	</Student>
+	<Student FullName="Кходаківська Олена Анатоліївна" Faculty="Журналістика" Department="Журналістика та соціальна комунікація" Specialization="Журналістика" Group="ЖСК-3">
+		<Discipline Name="Українська мова" Grade="99" />
+		<Discipline Name="Медіапродюсування" Grade="89" />
+	</Student>
+	<Student FullName="Сакура Вероня Юріївна" Faculty="Філологія" Department="Японська мова" Specialization="Переклад" Group="ФЛ-202">
+		<Discipline Name="Теорія перекладу" Grade="90" />
+		<Discipline Name="Японська література" Grade="86" />
+	</Student>
+	<Student FullName="Цилосані Тамріка Тамамазівна" Faculty="Журналістика" Department="Журналістика та соціальна комунікація" Specialization="Журналістика" Group="ЖСК-3">
+		<Discipline Name="Українська мова" Grade="89" />
+		<Discipline Name="Медіапродюсування" Grade="99" />
+	</Student>
+	<Student FullName="Соловйова Олена Олена" Faculty="Соціальна робота" Department="Міжнародні соціальні проекти та волонтерська діяльність" Specialization="Соціальна робота" Group="ФІ-401">
+		<Discipline Name="Психологія" Grade="89" />
+		<Discipline Name="Інформатика" Grade="85" />
+	</Student>
+	<Student FullName="Гребенюк Марія Русланівна" Faculty="Хімія" Department="Неорганічна хімія" Specialization="Матеріалознавство" Group="ХІ-205">
+		<Discipline Name="Хімія матеріалів" Grade="93" />
+		<Discipline Name="Неорганічні речовини" Grade="88" />
+	</Student>
+	<Student FullName="Сікора Віктор Миколайович" Faculty="Математика" Department="Чиста математика" Specialization="Теорія чисел" Group="МА-301">
+		<Discipline Name="Абстрактна алгебра" Grade="91" />
+		<Discipline Name="Теорія чисел" Grade="94" />
+	</Student>
+	<Student FullName="Маврін Андрій Володимирович" Faculty="Прикладного системного аналізу" Department="Системний аналіз і управління" Specialization="Системний аналіз" Group="ГФ-203">
+		<Discipline Name="Алгебра та геометрія" Grade="89" />
+		<Discipline Name="Математичний аналіз" Grade="87" />
+	</Student>
+	<Student FullName="Собамченко Сша" Faculty="Комп'ютерних наук та кібернетики" Department="Інформатика" Specialization="Комп'ютерні науки" Group="К-26">
+		<Discipline Name="Математичний аналіз" Grade="92" />
+		<Discipline Name="Дискретна математика" Grade="89" />
+	</Student>
+	<Student FullName="Савченко Валерія Віталіївна" Faculty="Медицина" Department="Лікувальна справа" Specialization="Медицина" Group="ІН-101">
+		<Discipline Name="Теорія механізмів і машин" Grade="88" />
+		<Discipline Name="Інженерна графіка" Grade="81" />
+	</Student>
+	<Student FullName="Буряк Юліана Юріївна" Faculty="Архітектура" Department="Містобудування" Specialization="Урбаністика" Group="АР-304">
+		<Discipline Name="Основи урбаністики" Grade="92" />
+		<Discipline Name="Архітектурне проектування" Grade="89" />
+	</Student>
+	<Student FullName="Безверхий Максим Вікторович" Faculty="Архітектура" Department="Містобудування" Specialization="Урбаністика" Group="АР-304">
+		<Discipline Name="Основи урбаністики" Grade="92" />
+		<Discipline Name="Архітектурне проектування" Grade="89" />
+	</Student>
+	<Student FullName="Ступак Катерина Сергіївна" Faculty="Архітектура" Department="Містобудування" Specialization="Урбаністика" Group="АР-304">
+		<Discipline Name="Основи урбаністики" Grade="92" />
+		<Discipline Name="Архітектурне проектування" Grade="89" />
+	</Student>
+	<Student FullName="Практичний Тапас Юрійович" Faculty="Архітектура" Department="Містобудування" Specialization="Урбаністика" Group="АР-304">
+		<Discipline Name="Основи урбаністики" Grade="92" />
+		<Discipline Name="Архітектурне проектування" Grade="89" />
+	</Student>
+</Students>

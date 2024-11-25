@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="seclab.ResultPage"
+             Title="Список студентів"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Grid.ColumnDefinitions="*,*,*,*">
+                <!-- Список студентів -->
+                <CollectionView Grid.Column="1" Grid.ColumnSpan="2" ItemsSource="{Binding Students}" Margin="0,10,0,0">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <VerticalStackLayout>
+                                <Frame BackgroundColor="PowderBlue" CornerRadius="10" Padding="10" Margin="0,10,0,0" >
+                                    <VerticalStackLayout Spacing="10">
+                                        <!-- Загальна інформація -->
+                                        <Frame>
+                                            <Label Text="{Binding FullName}" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#333" />
+                                        </Frame>
+
+                                        <Frame>
+                                            <VerticalStackLayout>
+                                                <HorizontalStackLayout Spacing="10">
+                                                    <Label Text="Факультет:" FontSize="16" FontAttributes="Bold" TextColor="#555" />
+                                                    <Label Text="{Binding Faculty}" FontSize="16" TextColor="#555" />
+                                                </HorizontalStackLayout>
+
+                                                <HorizontalStackLayout Spacing="10">
+                                                    <Label Text="Кафедра:" FontSize="16" FontAttributes="Bold" TextColor="#555" />
+                                                    <Label Text="{Binding Department}" FontSize="16" TextColor="#555" />
+                                                </HorizontalStackLayout>
+
+                                                <HorizontalStackLayout Spacing="10">
+                                                    <Label Text="Спеціалізація:" FontSize="16" FontAttributes="Bold" TextColor="#333" />
+                                                    <Label Text="{Binding Specialization}" FontSize="16" TextColor="#555" />
+                                                </HorizontalStackLayout>
+
+                                                <HorizontalStackLayout Spacing="10">
+                                                    <Label Text="Група:" FontSize="16" FontAttributes="Bold" TextColor="#333" />
+                                                    <Label Text="{Binding Group}" FontSize="16" TextColor="#555" />
+                                                </HorizontalStackLayout>
+                                            </VerticalStackLayout>
+                                        </Frame>
+
+                                        <!-- Список дисциплін -->
+                                        <VerticalStackLayout >
+                                            <Label Margin="0,0,0,10" Text="Дисципліни" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                            <Frame>
+                                                <CollectionView ItemsSource="{Binding Disciplines}">
+                                                    <CollectionView.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <VerticalStackLayout>
+                                                                <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,10,0,10" />
+                                                                <Grid ColumnSpacing="10" Grid.RowDefinitions="*,*" Grid.ColumnDefinitions="*,Auto" >
+                                                                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="16" TextColor="#333" />
+                                                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Grade}" FontSize="16" FontAttributes="Bold" TextColor="#333" HorizontalOptions="Start" />
+                                                                </Grid>
+                                                                <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,10,0,0" />
+                                                            </VerticalStackLayout>
+
+                                                        </DataTemplate>
+                                                    </CollectionView.ItemTemplate>
+                                                </CollectionView>
+                                            </Frame>
+                                        </VerticalStackLayout>
+                                    </VerticalStackLayout>
+                                </Frame>
+                                <BoxView HeightRequest="20" BackgroundColor="Transparent"></BoxView>
+                            </VerticalStackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+
